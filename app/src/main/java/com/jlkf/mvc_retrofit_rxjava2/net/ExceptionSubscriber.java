@@ -32,14 +32,14 @@ public class ExceptionSubscriber<T> extends DisposableObserver<T> {
             Toast.makeText(application, "error:" + e.getMessage(), Toast.LENGTH_SHORT).show();
         }
         if (simpleCallback != null){
-            simpleCallback.onComplete();
+            simpleCallback.onCompleteRequest();
         }
     }
 
     @Override
     public void onComplete() {
         if (simpleCallback != null){
-            simpleCallback.onComplete();
+            simpleCallback.onCompleteRequest();
         }
     }
 
@@ -48,7 +48,7 @@ public class ExceptionSubscriber<T> extends DisposableObserver<T> {
     protected void onStart() {
         super.onStart();
         if (simpleCallback != null){
-            simpleCallback.onStart();
+            simpleCallback.onStartRequest();
         }
     }
 

@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         ApiManager.getInstace().login("18589080625", "ede8fe4747908d485c17f01978e617ab", new SimpleCallback<UserBean>() {
             @Override
-            public void onStart() {
+            public void onStartRequest() {
             }
 
             @Override
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onComplete() {
+            public void onCompleteRequest() {
 
             }
         });
