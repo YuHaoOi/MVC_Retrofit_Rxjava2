@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ApiManager.getInstace().login("18589080625", "ede8fe4747908d485c17f01978e617ab", new SimpleCallback<UserBean>() {
+        ApiManager.getInstance().login("18589080625", "ede8fe4747908d485c17f01978e617ab", new SimpleCallback<UserBean>() {
             @Override
             public void onStartRequest() {
             }
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-//        ApiManager.getInstace().login("18589080625", "ede8fe4747908d485c17f01978e617ab", new OiSimpleCallback<UserBean>() {
+//        ApiManager.getInstance().login("18589080625", "ede8fe4747908d485c17f01978e617ab", new OiSimpleCallback<UserBean>() {
 //            @Override
 //            public void onNext(UserBean userBean) {
 //                Toast.makeText(MainActivity.this, userBean.nickname, Toast.LENGTH_SHORT).show();

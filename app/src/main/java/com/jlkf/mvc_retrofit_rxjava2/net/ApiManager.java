@@ -22,7 +22,7 @@ public class ApiManager {
         private static ApiManager oiApiManager = new ApiManager(OiApiManager.getApiServie(), MainApplication.get());
     }
 
-    public static ApiManager getInstace() {
+    public static ApiManager getInstance() {
         return OiRetrofitUtilsHolder.oiApiManager;
     }
 
